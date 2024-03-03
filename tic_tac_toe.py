@@ -64,7 +64,10 @@ def start_game():
         else:
             print("Не коректный номер.Повторите ход")
 
-    print("Выйграл" + checking())
+    if (move == 9):
+        print("Игра окончена. Ничья!")
+    else:
+        print("Выйграл" + checking())
 
 print("Начало игры Крестики - нолики!")
 start_game()
